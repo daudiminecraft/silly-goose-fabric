@@ -25,12 +25,14 @@
   "sounds.silly-goose.goose_death": "Gęś umiera",
   "sounds.silly-goose.goose_hurt": "Gęś cierpi",
 
-  "advancement.silly-goose.honk_and_run.title": "Honk and Run",
+  "advancement.silly-goose.honk_and_run.title": "Trąb i Uciekaj",
   "advancement.silly-goose.honk_and_run.description": "Daj się uderzyć gęsi",
-  "advancement.silly-goose.hit_and_run.title": "Hit and Run",
+  "advancement.silly-goose.hit_and_run.title": "Uderz i Uciekaj",
   "advancement.silly-goose.hit_and_run.description": "Daj się uderzyć gęsi trzymającej miecz",
-  "advancement.silly-goose.unfair_trade.title": "Unfair Trade",
+  "advancement.silly-goose.unfair_trade.title": "Nieuczciwa Wymiana",
   "advancement.silly-goose.unfair_trade.description": "Daj gęsi jedzenie w zamian za miecz",
+  "advancement.silly-goose.peace_was_never_an_option.title": "Pokój Nigdy Nie Był Opcją",
+  "advancement.silly-goose.peace_was_never_an_option.description": "Daj gęsi efekt szybkości",
 
   "splash.silly-goose.honk": "HONK HONK",
   "splash.silly-goose.silly_goose": "Ale z ciebie głupia gęś!",
@@ -42,6 +44,10 @@
   "splash.silly-goose.untitled_goose_game": "Wypróbuj też Untitled Goose Game!",
   "splash.silly-goose.no_geese_allowed": "Gęsiom wstęp wzbroniony!",
   "splash.silly-goose.honking": "*trąbienie narasta*",
+  "splash.silly-goose.trust": "Gęsiom NIE powinno się ufać.",
+  "splash.silly-goose.peace": "Pokój nigdy nie był opcją.",
+  "splash.silly-goose.titled": "Titled Goose Game!",
+  "splash.silly-goose.i11ushenka": "Wstaw tutaj odniesienie związane z gęsiami.",
 
   "tag.item.silly-goose.goose_eggs": "Jajko Gęsi",
 
