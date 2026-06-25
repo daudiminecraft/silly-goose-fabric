@@ -3,6 +3,7 @@ package potatowolfie.silly_goose.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.ItemTags;
 import potatowolfie.silly_goose.item.SillyGooseItems;
 import potatowolfie.silly_goose.registry.SillyGooseItemTags;
@@ -16,17 +17,17 @@ public class SillyGooseItemTagProvider extends FabricTagsProvider.ItemTagsProvid
 
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
-        valueLookupBuilder(ItemTags.WOLF_FOOD)
-                .add(SillyGooseItems.RAW_GOOSE)
-                .add(SillyGooseItems.COOKED_GOOSE);
+        builder(ItemTags.WOLF_FOOD)
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.RAW_GOOSE).unwrapKey().orElseThrow())
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.COOKED_GOOSE).unwrapKey().orElseThrow());
 
-        valueLookupBuilder(ItemTags.MEAT)
-                .add(SillyGooseItems.RAW_GOOSE)
-                .add(SillyGooseItems.COOKED_GOOSE);
+        builder(ItemTags.MEAT)
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.RAW_GOOSE).unwrapKey().orElseThrow())
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.COOKED_GOOSE).unwrapKey().orElseThrow());
 
-        valueLookupBuilder(SillyGooseItemTags.Item.GOOSE_EGGS)
-                .add(SillyGooseItems.WHITE_EGG)
-                .add(SillyGooseItems.BIG_WHITE_EGG)
-                .add(SillyGooseItems.SMALL_WHITE_EGG);
+        builder(SillyGooseItemTags.Item.GOOSE_EGGS)
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.WHITE_EGG).unwrapKey().orElseThrow())
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.BIG_WHITE_EGG).unwrapKey().orElseThrow())
+                .add(BuiltInRegistries.ITEM.wrapAsHolder(SillyGooseItems.SMALL_WHITE_EGG).unwrapKey().orElseThrow());
     }
 }
