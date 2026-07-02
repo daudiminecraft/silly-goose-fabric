@@ -796,10 +796,11 @@ public class GooseEntity extends AnimalEntity {
     }
 
 
-    public static class GooseGroupData implements EntityData {
+    public static class GooseGroupData extends PassiveEntity.PassiveData {
         private final boolean shouldSpawnBabies;
 
         public GooseGroupData(boolean shouldSpawnBabies) {
+            super(false);
             this.shouldSpawnBabies = shouldSpawnBabies;
         }
 
